@@ -20,3 +20,8 @@ nosetests.xml
 coverage.xml
 *.cover
 .ipynb_checkpoints
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
