@@ -4,13 +4,15 @@ install:
 brain-games:
 	uv run brain-games
 
-build:
+build: clean
 	uv build
 
 package-install:
-	uv tool install dist/*.whl
+	uv tool install --force .
 
 lint:
 	uv run ruff check brain_games
 
+clean:
+	rm -rf dist/
 
