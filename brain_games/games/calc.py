@@ -9,6 +9,7 @@ def make_round():
     Генерирует раунд для игры 'Калькулятор'.
     Возвращает: кортеж (вопрос, правильный_ответ)
     """
+    # Using random for non-cryptographic game logic only
     num1 = random.randint(1, 25)   # NOSONAR
     num2 = random.randint(1, 25)   # NOSONAR
     operator = random.choice(OPERATORS)   # NOSONAR
