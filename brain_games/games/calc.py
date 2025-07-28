@@ -9,9 +9,9 @@ def make_round():
     Генерирует раунд для игры 'Калькулятор'.
     Возвращает: кортеж (вопрос, правильный_ответ)
     """
-    num1 = random.randint(1, 25)
-    num2 = random.randint(1, 25)
-    operator = random.choice(OPERATORS)
+    num1 = random.randint(1, 25)   # NOSONAR
+    num2 = random.randint(1, 25)   # NOSONAR
+    operator = random.choice(OPERATORS)   # NOSONAR
 
     question = f'{num1} {operator} {num2}'
 
